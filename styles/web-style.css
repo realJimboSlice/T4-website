@@ -1,0 +1,66 @@
+body {
+  background-color: #000000;
+  margin: 1rem;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+
+header li a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: 5vw;
+}
+h2 {
+  font-size: 1rem;
+}
+h3 {
+  font-size: 1vw;
+}
+
+.inspiration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+}
+
+.img-container img {
+  width: 100%;
+  grid-gap: 1vw;
+}
+
+.paragraph {
+  text-align: justify;
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.three-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.5rem;
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.baggrunde {
+  background-color: #111111;
+}

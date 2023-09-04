@@ -1,0 +1,291 @@
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+#game {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#game_background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/game-img/church-background.svg);
+  background-size: cover;
+}
+
+#game_elements {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#game_ui {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Enemies */
+
+/* Nun */
+#nun-container {
+  width: 10%;
+  aspect-ratio: 5/7;
+  position: absolute;
+}
+
+#nun-sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/game-img/nun.svg);
+  background-size: cover;
+}
+
+/* Nun scare */
+
+#nun-scare-container {
+  width: 10%;
+  aspect-ratio: 5/7;
+  position: absolute;
+}
+
+#nun-scare-sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/game-img/nun-scare.svg);
+  background-size: cover;
+}
+
+/* Pope */
+
+#pope-container {
+  width: 10%;
+  aspect-ratio: 5/7;
+  position: absolute;
+}
+
+#pope-sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/game-img/nun-scare.svg);
+  background-size: cover;
+}
+
+/* Priest */
+
+#priest-container {
+  width: 10%;
+  aspect-ratio: 5/7;
+  position: absolute;
+}
+
+#priest-sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/game-img/nun-scare.svg);
+  background-size: cover;
+}
+
+/* UI */
+
+#time_container {
+  position: absolute;
+  /* width: ;
+  height: ;
+  top: ;
+  left: ; */
+  border: 1px solid #000000;
+}
+
+#time_sprite {
+  /* width: ;
+  height: ;
+  top: ;
+  left: ; */
+  transform-origin: 50% 100%;
+  background-color: lime;
+}
+
+#myKills {
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #e40000;
+  font-size: 2vh;
+}
+
+#myHealthPoints {
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #e40000;
+  font-size: 2vh;
+}
+
+#health {
+  position: absolute;
+  /* top: %;
+  left: %; */
+  width: 5%;
+  background-image: url(../img/game-img/lives.svg);
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#scoreboard {
+  position: absolute;
+  /* top: %;
+  left: %; */
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/game-img/kills.svg);
+  background-size: 100%;
+}
+
+/* Buttons */
+
+.button {
+  position: absolute;
+  width: 25%;
+  cursor: pointer;
+  background-size: 100%;
+}
+
+#play-1,
+#play-2 {
+  background-image: url(../img/game-img/play-button.svg);
+  top: 38%;
+  left: 38%;
+  /* aspect-ratio: ; */
+}
+
+#htp-button {
+  background-image: url(../img/game-img/how-to-button.svg);
+  top: 50%;
+  left: 38%;
+  /* aspect-ratio: ; */
+}
+
+#play-again-1,
+#play-again-2 {
+  background-image: url(../img/game-img/play-button.svg);
+  top: 38%;
+  left: 38%;
+  /* aspect-ratio: ; */
+}
+
+/* Classes */
+
+.hide {
+  display: none;
+}
+
+.freeze {
+  animation-play-state: paused;
+}
+
+.reduce {
+  animation-name: reduce_kf;
+  animation-duration: 30s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes reduce_kf {
+  0% {
+    scale: 1 1;
+    background-color: rgb(43, 186, 43);
+  }
+
+  50% {
+    background-color: rgb(243, 223, 37);
+  }
+
+  100% {
+    scale: 1 0;
+    background-color: rgb(235, 3, 3);
+  }
+}
+
+.fade {
+  animation-name: fade_kf;
+  animation-duration: 0.1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade_kf {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Positions */
+
+/* Delay */
+
+.delay {
+  animation-delay: 1s;
+}
+
+/* Screens */
+
+#start {
+  background-image: url(../img/game-img/intro-screen.svg);
+  position: absolute;
+  background-size: cover;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#how-to-play {
+  background-image: url(../img/game-img/how-to-play.svg);
+  position: absolute;
+  background-size: cover;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#level-complete {
+  background-image: url(../img/game-img/complete-game.svg);
+  position: absolute;
+  background-size: cover;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#game-over {
+  background-image: url(../img/game-img/game-over.svg);
+  position: absolute;
+  background-size: cover;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}

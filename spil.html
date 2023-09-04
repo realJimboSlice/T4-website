@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=".//styles/game-style.css" />
+    <link rel="stylesheet" href=".//styles/web-style.css" />
+    <title>Spil</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="spil.html">Spil</a></li>
+          <li><a href="ide.html">Idé</a></li>
+          <li>
+            <a href="teknik.html">Teknisk Dokumentation</a>
+          </li>
+          <li><a href="grafik.html">Grafik</a></li>
+          <li><a href="assets.html">Assets</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- The Game -->
+
+    <div id="screen">
+      <div id="game">
+        <div id="sound">
+          <audio id="gunshot" src="./sound/gunsound.mp3"></audio>
+        </div>
+
+        <div id="game-background"></div>
+
+        <div id="game-elements">
+          <div id="nun-container">
+            <div id="nun-sprite"></div>
+          </div>
+
+          <div id="nun-scare-container">
+            <div id="nun-scare-sprite"></div>
+          </div>
+
+          <div id="pope-container">
+            <div id="pope-sprite"></div>
+          </div>
+
+          <div id="priest-container">
+            <div id="priest-sprite"></div>
+          </div>
+        </div>
+
+        <div id="scoreboard">
+          <span id="myKills"></span>
+        </div>
+
+        <div id="health">
+          <span id="myHealthPoints"></span>
+        </div>
+
+        <div id="time-container">
+          <div id="time-sprite"></div>
+        </div>
+      </div>
+
+      <div id="start" class="">
+        <div id="play-1" class="button"></div>
+        <div id="htp-button" class="button"></div>
+      </div>
+
+      <div id="how-to-play" class="hide">
+        <div id="play-2" class="button"></div>
+      </div>
+
+      <div id="game-over" class="hide">
+        <div id="play-again-1" class="button"></div>
+      </div>
+
+      <div id="level-complete" class="hide">
+        <div id="play-again-2" class="button"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+  </body>
+  <script src="./scripts/script.js"></script>
+</html>
